@@ -1,0 +1,12 @@
+{
+  "name": "slidescript",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": ["server", "web"],
+  "scripts": {
+    "dev": "bun run --cwd server dev",
+    "build": "bun run build:web && bun run build:server",
+    "build:web": "bun run --cwd web build",
+    "build:server": "bun run --cwd server build"
+  }
+}

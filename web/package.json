@@ -1,0 +1,21 @@
+{
+  "name": "slidescript-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun build src/main.tsx --outdir=dist --format=esm --external react --external react-dom",
+    "build:standalone": "bun build src/main.tsx --outdir=dist --format=esm",
+    "build:watch": "bun build src/main.tsx --outdir=dist --format=esm --external react --external react-dom --watch"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.0"
+  }
+}
